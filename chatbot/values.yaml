@@ -813,7 +813,7 @@ global:
   progressDeadlineSeconds: 600
   # storageClass the volume claims should use
   # storageClass: ""
-  storageClass: "efs-sc-1"
+  storageClass: "efs-sc"
   # postgresql: global settings of the postgresql subchart
   postgresql:
     # postgresqlUsername which should be used by Rasa to connect to Postgres
@@ -939,7 +939,7 @@ mongodb:
     ##   GKE, AWS & OpenStack)
     ##
     # storageClass: "storageClassName: manual"
-    storageClass: "storageClassName: efs-sc-1"
+    # storageClass: "storageClassName: efs-sc-1"
     accessMode: ReadWriteOnce
     size: 8Gi
 

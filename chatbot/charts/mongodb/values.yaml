@@ -171,8 +171,8 @@ replicaSet:
   ## Number of replicas per each node type
   ##
   replicas:
-    secondary: 1
-    arbiter: 1
+    secondary: 0
+    arbiter: 0
 
   # Pod Disruption Budget
   # ref: https://kubernetes.io/docs/concepts/workloads/pods/disruptions/
@@ -309,7 +309,7 @@ persistence:
   ##   GKE, AWS & OpenStack)
   ##
   # storageClass: "-"
-  storageClass: "efs-sc-1"
+  # storageClass: "efs-sc-1"
   accessModes:
     - ReadWriteOnce
   size: 8Gi
